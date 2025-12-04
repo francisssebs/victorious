@@ -1,0 +1,14 @@
+#Task
+
+#Create a new GitHub repo for the project.
+
+#Configure AWS CLI on your laptop using an IAM user with least-privilege.
+
+#Write a simple Terraform config that:
+
+#Uses your AWS profile & region
+
+#Creates 1 EC2 instance in the default VPC
+
+#Use Terraform to launch and destroy the instance once (just to prove it).
+
