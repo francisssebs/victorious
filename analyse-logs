@@ -1,0 +1,16 @@
+#!/bin/bash
+
+
+echo -e "\n checking fatal errors in application.log"
+echo " =============================== "
+sleep "2"
+grep "ERROR" /Users/user/Desktop/NANA/scripting/logs/application.log
+echo "--------------------------------"
+echo -e "\n number of fatal errors "
+grep -c "ERROR" /Users/user/Desktop/NANA/scripting/logs/application.log 
+grep -c "FATAL" /Users/user/Desktop/NANA/scripting/logs/application.log 
+
+echo -e "\n checking for fatal and critical msgsin system logs "
+grep -c "FATAL" /Users/user/Desktop/NANA/scripting/logs/system.log 
+grep -c "CRITICAL" /Users/user/Desktop/NANA/scripting/logs/system.log 
+grep "CRITICAL" /Users/user/Desktop/NANA/scripting/logs/system.log
