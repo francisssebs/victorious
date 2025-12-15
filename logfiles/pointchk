@@ -1,0 +1,19 @@
+#!/bin/bash 
+LOG="wallace.txt "
+CHKS={"ERROR","error","failed"}
+
+
+echo "Analysing Log Files"
+echo "-------------------"
+echo -e "\nchecking for failed systems on the server "
+
+
+grep "$CHKS[2]" $LOG
+find $LOG -name "system"
+echo "list the error messages"
+grep "$CHKS[0]" $LOG 
+grep "$CHKS[1]" $LOG 
+echo -e "\n number of error messages."
+echo "============================"
+grep -c "$CHKS[1]" $LOG 
+grep -c "CHKS[0]" $LOG
